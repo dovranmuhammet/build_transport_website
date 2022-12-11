@@ -656,14 +656,21 @@ body {
   #PROJECT
 \*-----------------------------------*/
 
+.project {
+  background-color: var(--alice-blue);
+}
 
-.project { background-color: var(--alice-blue); }
+.project :is(.section-subtitle, .section-title, .section-text) {
+  text-align: center;
+}
 
-.project :is(.section-subtitle, .section-title, .section-text) { text-align: center; }
+.project .section-text {
+  margin-block: 20px 50px;
+}
 
-.project .section-text { margin-block: 20px 50px; }
-
-.project-card { position: relative; }
+.project-card {
+  position: relative;
+}
 
 .project-card .action-btn {
   background-color: var(--dark-orange);
@@ -677,7 +684,9 @@ body {
   transition: var(--transition);
 }
 
-.project-card:is(:hover, :focus-within) .action-btn { opacity: 1; }
+.project-card:is(:hover, :focus-within) .action-btn {
+  opacity: 1;
+}
 
 .project-card .card-tag {
   color: var(--dark-orange);
@@ -692,11 +701,17 @@ body {
   margin-inline-start: 30px;
 }
 
-.project-card .h3 { font-size: var(--fs-7); }
+.project-card .h3 {
+  font-size: var(--fs-7);
+}
 
-.project-card .card-title { transition: var(--transition); }
+.project-card .card-title {
+  transition: var(--transition);
+}
 
-.project-card :is(.card-title, .card-link):is(:hover, :focus) { color: var(--dark-orange); }
+.project-card :is(.card-title, .card-link):is(:hover, :focus) {
+  color: var(--dark-orange);
+}
 
 .project-card .card-link {
   color: var(--prussian-blue);
@@ -720,20 +735,64 @@ body {
   scroll-snap-align: start;
 }
 
-.project-list::-webkit-scrollbar { height: 15px; }
+.project-list::-webkit-scrollbar {
+  height: 15px;
+}
 
-.project-list::-webkit-scrollbar-track { outline: 2px solid var(--prussian-blue); }
+.project-list::-webkit-scrollbar-track {
+  outline: 2px solid var(--prussian-blue);
+}
 
 .project-list::-webkit-scrollbar-thumb {
   border: 3px solid var(--cultured-1);
   background-color: var(--prussian-blue);
 }
 
-.project-list::-webkit-scrollbar-button { width: calc(25% - 40px); 
+.project-list::-webkit-scrollbar-button {
+  width: calc(25% - 40px);
+}
 
 /*-----------------------------------*\
   #BLOG
 \*-----------------------------------*/
+
+.blog :is(.section-subtitle, .section-title, .section-text) {
+  text-align: center;
+}
+
+.blog .section-text {
+  margin-block: 20px 50px;
+}
+
+.blog-card .card-content {
+  position: relative;
+}
+
+.blog-card .card-meta {
+  background-color: var(--prussian-blue);
+  color: var(--white);
+  text-align: center;
+  font-size: var(--fs-5);
+  font-family: var(--ff-oswald);
+  font-weight: var(--fw-600);
+  line-height: 1.5;
+  max-width: max-content;
+  margin-inline: auto 20px;
+  margin-block: -80px 20px;
+  padding: 20px 25px;
+  box-shadow: -8px 8px 0 var(--dark-orange);
+}
+
+.blog-card .card-meta .span {
+  color: var(--dark-orange);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-700);
+  line-height: 0.75;
+}
+
+.blog-card .card-text {
+  margin-block: 15px;
+}
 
 /*-----------------------------------*\
   #NEWSLETTER
