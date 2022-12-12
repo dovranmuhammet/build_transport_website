@@ -942,4 +942,35 @@ body {
     padding-inline: 30px 60px;
   }
 
+/**
+   * HEADER
+   */
+
+  .header-contact {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: right;
+    line-height: 1.2;
+    margin-inline-start: auto;
+  }
+
+  .header .contact-label {
+    text-transform: uppercase;
+    font-size: var(--fs-9);
+  }
+
+  .header .contact-number {
+    font-size: var(--fs-6);
+    font-weight: var(--fw-600);
+    letter-spacing: 1px;
+  }
+
+  .header .contact-icon {
+    font-size: 35px;
+    opacity: 0.6;
+  }
+
+
 
