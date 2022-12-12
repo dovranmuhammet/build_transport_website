@@ -926,3 +926,20 @@ body {
 /*-----------------------------------*\
   #MEDIA QUERISE
 \*-----------------------------------*/
+
+/**
+ * responsive for larger than 540px screen
+ */
+
+@media (min-width: 540px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .btn {
+    font-size: var(--fs-7);
+    padding-inline: 30px 60px;
+  }
+
+
