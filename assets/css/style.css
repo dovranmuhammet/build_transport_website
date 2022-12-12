@@ -988,3 +988,64 @@ body {
     right: -200px;
   }
 }
+
+/**
+ * responsive for larger than 640px screen
+ */
+
+@media (min-width: 640px) {
+  /**
+   * REUSED STYLE
+   */
+
+  .h1 {
+    --fs-3: 5rem;
+  }
+
+  .container {
+    max-width: 540px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /**
+   * HEADER
+   */
+
+  .header .container {
+    max-width: unset;
+  }
+
+  .header .logo {
+    font-size: 3.5rem;
+  }
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    justify-content: flex-start;
+  }
+
+  .hero .shape-1 {
+    left: 45px;
+  }
+
+  .hero-content {
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .hero-title .span {
+    --fs-2: 6rem;
+  }
+
+  .hero-text {
+    max-width: 30ch;
+  }
+
+  .btn-outline {
+    margin-inline: 0;
+  }
+}
