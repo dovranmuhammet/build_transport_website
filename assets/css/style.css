@@ -1216,3 +1216,52 @@ body {
 /**
  * responsive for larger than 992px screen
  */
+
+ /**
+ * responsive for larger than 1200px screen
+ */
+
+@media (min-width: 1200px) {
+
+  /**
+   * REUSED STYLE
+   */
+
+  .container { max-width: 1180px; }
+
+  .h1 { --fs-3: 12rem; }
+
+
+
+  /**
+   * HEADER
+   */
+
+  .header .contact-number { --fs-6: 3rem; }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    padding-block-start: 150px;
+    background-position: left;
+  }
+
+  .hero-title .span { --fs-2: 14rem; }
+
+  .hero-text { --fs-7: 2.4rem; }
+
+
+
+  /**
+   * ABOUT
+   */
+
+  .about-banner { max-width: 370px; }
+
+  .about .abs-img-2 { width: max-content; }
+
+
