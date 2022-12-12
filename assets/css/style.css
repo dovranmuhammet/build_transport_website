@@ -932,7 +932,6 @@ body {
  */
 
 @media (min-width: 540px) {
-
   /**
    * REUSED STYLE
    */
@@ -942,7 +941,7 @@ body {
     padding-inline: 30px 60px;
   }
 
-/**
+  /**
    * HEADER
    */
 
@@ -972,5 +971,20 @@ body {
     opacity: 0.6;
   }
 
+  /**
+   * ABOUT
+   */
 
+  .about .abs-img-2 {
+    display: block;
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+    left: 50px;
+    z-index: -1;
+  }
 
+  .about .abs-img-1 {
+    right: -200px;
+  }
+}
